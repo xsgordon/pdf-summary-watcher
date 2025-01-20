@@ -2,7 +2,8 @@
 
 ## TL;DR
 
-Watches a directory for new PDF files and generates a TXT summary using `docling` and `textsum`.
+Watches a directory for new PDF files and generates a TXT summary using `docling` and `textsum`. This is experimental
+and mostly for my own interest. I am running it in a Fedora 39 toolbox.
 
 ## Pre-requisites
 
@@ -29,3 +30,9 @@ Python libraries:
 ## Usage
 
 `usage: pdf-summary-watcher.py [-h] --directory DIRECTORY [--model MODEL]`
+
+## TODO
+
+Currently using both docling and textsum unnecessarily, textsum can take a PDF
+directly. Original intent was to use a different model outside of the list
+textsum supports.
